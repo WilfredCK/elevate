@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b46">
+  <title>Elevate — Digital Learning for Work</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="Elevate home"><span class="brand-mark">e<span>+</span></span><span class="brand-name">elevate<small>WORKPLACE LEARNING</small></span></a>
+      <div class="workspace-label">LEARNING SPACE</div>
+      <nav class="nav">
+        <button class="nav-item active" data-page="home"><span>◫</span> Overview</button>
+        <button class="nav-item" data-page="catalog"><span>▤</span> Course catalogue <b class="nav-count">12</b></button>
+        <button class="nav-item" data-page="my-learning"><span>◷</span> My learning</button>
+        <button class="nav-item" data-page="certificates"><span>♧</span> Certificates</button>
+      </nav>
+      <div class="workspace-label management-label">ORGANISATION</div>
+      <nav class="nav">
+        <button class="nav-item" data-page="team"><span>♙</span> Team progress</button>
+        <button class="nav-item" data-page="assignments"><span>☑</span> Required learning</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><div class="help-icon">✦</div><strong>Keep growing.</strong><p>Small learning steps build stronger digital habits.</p><button data-page="catalog" class="text-action">Explore courses <span>↗</span></button></div>
+        <button class="profile-mini" id="profile-switch"><span class="avatar">CW</span><span><strong>Collin Wilfred</strong><small>Learning participant</small></span><span class="dots">···</span></button>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Open menu">☰</button>
+        <div class="breadcrumb">Learning space <span>/</span> <strong id="crumb">Overview</strong></div>
+        <div class="top-actions"><button class="icon-button" id="search-open" title="Search">⌕</button><button class="icon-button notification" title="Notifications">♧<i></i></button><span class="top-divider"></span><span class="avatar small-avatar">CW</span><span class="top-name">Collin Wilfred</span></div>
+      </header>
+      <section class="page-content" id="page-content"></section>
+      <footer class="footer"><span>© 2026 Elevate Learning</span><span>Learn with purpose. Work with confidence.</span><span><i class="status-dot"></i> Learning space active</span></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="modal-backdrop"><section class="modal" id="modal" role="dialog" aria-modal="true"></section></div>
+  <script src="data.js"></script><script src="app.js"></script>
+</body>
+</html>
